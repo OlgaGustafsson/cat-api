@@ -3,7 +3,6 @@ const url = "https://api.thecatapi.com/v1/images/search?limit=10";
 const imgElement = document.querySelector("#img") as HTMLImageElement;
 imgElement.className = ("cat");
 
-
 const p = fetch(url)
     .then(response => {
         return response.json();
@@ -11,11 +10,9 @@ const p = fetch(url)
         printCat(catsArray);
     });
 
-
-
 function printCat(cats: any) {
-    let randomButton = document.querySelector("#button") as HTMLButtonElement;
-    randomButton.addEventListener("click", (event) => {
+    let button = document.querySelector("#button") as HTMLButtonElement;
+    button.addEventListener("click", (event) => {
         let randomNr = Math.floor(Math.random() * cats.length);
         const catsSec = document.querySelector(".a") as HTMLElement;
         catsSec.innerHTML = "";
@@ -28,9 +25,6 @@ function printCat(cats: any) {
     })
    
 };
-
-
-
 
 
 // const url = "https://api.thecatapi.com/v1/images/search?limit=10";
