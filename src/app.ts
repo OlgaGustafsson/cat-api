@@ -8,6 +8,7 @@ const p = fetch(url)
         return response.json();
     }).then(catsArray => {
         printCat(catsArray);
+        console.log(catsArray);
     });
 
 function printCat(cats: any) {
