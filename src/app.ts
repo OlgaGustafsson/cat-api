@@ -2,7 +2,6 @@
 const url = "https://api.thecatapi.com/v1/images/search?limit=10";
 const catsDiv = document.querySelector("#img") as HTMLImageElement;
 const catsSec = document.querySelector(".a") as HTMLElement;
-//imgElement.className = ("cat");
 
 const cat = fetch(url)
     .then(response => {
