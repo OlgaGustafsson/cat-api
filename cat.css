@@ -34,18 +34,19 @@ h1 {
     margin-bottom: 40px; */
 
     border: solid 1px rgba(13, 37, 106, 0.648);
-    /* border: solid 1px greenyellow; */
     height: 400px;
     width: 650px;
 
 }
 
- /* #img {
+ #img {
     image-rendering: auto;
     display: flex;
     flex: 1;
     justify-content: center;
-}  */
+    width: 650;
+    height: 400;
+}  
 
 .b {
     display: flex;
@@ -53,7 +54,6 @@ h1 {
     justify-content: center;
     margin-top: 160px;
     margin-bottom: 20px;
-
 }
 
 .grow:hover { 

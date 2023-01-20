@@ -1,7 +1,6 @@
 "use strict";
 const url = "https://api.thecatapi.com/v1/images/search?limit=10";
 const imgElem = document.querySelector('#img');
-//const catsDiv = document.querySelector("#img") as HTMLImageElement;
 const catsSec = document.querySelector(".a");
 const cat = fetch(url)
     .then(response => {
@@ -19,7 +18,7 @@ function printCat(cats) {
         imgElem.innerHTML = "";
         cats.src = cats[randomN].url;
         imgElem.append(cats.src);
-        catsSec.append(imgElem);
+        //catsSec.append(imgElem);
         console.log(cats);
     });
 }
