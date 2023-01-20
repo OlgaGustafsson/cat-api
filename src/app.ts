@@ -21,9 +21,8 @@ function printCat(cats: any) {
 
         let randomN = Math.floor(Math.random() * cats.length + 1); // return slumpmässigt heltal 
 
-        // imgElem.innerHTML = "";
+        //imgElem.innerHTML = "";
         imgElem.src = cats[randomN].url;
-
 
     });
 };
