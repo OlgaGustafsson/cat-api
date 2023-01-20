@@ -41,11 +41,11 @@ h1 {
 
  #img {
     image-rendering: auto;
-    display: flex;
-    flex: 1;
+    /* display: flex;
+    flex: 1; */
     justify-content: center;
-    width: 650;
-    height: 400;
+    width: auto;
+    height:auto;
 }  
 
 .b {
