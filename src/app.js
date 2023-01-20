@@ -15,10 +15,10 @@ function printCat(cats) {
     button.addEventListener("click", (event) => {
         event.preventDefault();
         let randomN = Math.floor(Math.random() * cats.length + 1); // return slumpmässigt heltal 
-        imgElem.innerHTML = "";
         cats.src = cats[randomN].url;
-        imgElem.append(cats.src);
-        //catsSec.append(imgElem);
+        imgElem.src = cats.src;
+        //imgElem.src = cats[randomN].url;
+        catsSec.append(imgElem);
         console.log(cats);
     });
 }
