@@ -11,19 +11,20 @@ const cat = fetch(url)
         printCat(catsArray);
 
         console.log(catsArray);
-        
+
     });
 
 function printCat(cats: any) {
     let button = document.querySelector("#button") as HTMLButtonElement;
     button.addEventListener("click", (event) => {
         event.preventDefault();
-        
+
         let randomN = Math.floor(Math.random() * cats.length + 1); // return slumpmässigt heltal 
-    
-       // imgElem.innerHTML = "";
+
+        // imgElem.innerHTML = "";
         imgElem.src = cats[randomN].url;
-        
-       
-    });     
+
+
+    });
 };
+console.log(("hej"));
